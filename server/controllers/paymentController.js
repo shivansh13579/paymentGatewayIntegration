@@ -4,7 +4,7 @@ export const checkout = async (req,res) => {
 
        try {
              const options = {
-                 amount: 50000,
+                 amount: Number(req.body.amount * 100),
                  currency: "INR",
              };
      
